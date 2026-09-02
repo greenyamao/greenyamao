@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
   <defs>
-    <!-- Simple, static dark radial gradient -->
     <linearGradient id="dark-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0a1120" />
       <stop offset="50%" stop-color="#030509" />
@@ -29,29 +28,24 @@
   <rect width="900" height="420" rx="12" fill="url(#dark-bg)" />
   <rect width="898" height="418" x="1" y="1" rx="11" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
 
-  <!-- Top bar -->
   <text class="mono" x="48" y="48" font-size="12" font-weight="600" fill="#64748b" letter-spacing="2">PROFILE</text>
 
-  <!-- Radar indicator -->
   <g transform="translate(755, 44)">
     <circle cx="0" cy="0" r="5" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.5" />
     <circle cx="0" cy="0" r="3" fill="#0284c7" />
     <text class="mono" x="14" y="3.5" font-size="12" fill="#64748b">online</text>
   </g>
 
-  <!-- Headlines -->
   <text class="sans" x="48" y="115" font-size="32" font-weight="600" fill="#ffffff" letter-spacing="-0.5">Software &amp; Web Systems Engineer</text>
   <text class="mono" x="48" y="145" font-size="14" fill="#94a3b8">Web Interfaces · Agent Workflows · Automated Pipelines</text>
   
-  <!-- Experience & Education -->
+  <!-- Исправлен &nbsp; на &#160; -->
   <text class="sans" x="48" y="175" font-size="15" font-weight="500" fill="#e2e8f0">
-    4 Years of Experience <tspan fill="#475569"> &nbsp;•&nbsp; </tspan> Degree in Information Systems and Programming
+    4 Years of Experience <tspan fill="#475569"> &#160;•&#160; </tspan> Degree in Information Systems and Programming
   </text>
 
-  <!-- Separator rule -->
   <line x1="48" y1="210" x2="852" y2="210" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" />
 
-  <!-- LEFT COLUMN: Tech Stack -->
   <text class="mono" x="48" y="255" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1.5">TECH STACK &amp; SYSTEMS</text>
   
   <text class="sans list-text" x="48" y="285">
@@ -64,7 +58,6 @@
     <tspan class="highlight">Game Dev:</tspan> Godot 4.7.1, C# (.NET 10), Steam P2P
   </text>
 
-  <!-- RIGHT COLUMN: Directives -->
   <text class="mono" x="460" y="255" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1.5">CURRENT DIRECTIVES</text>
   
   <circle cx="465" cy="280" r="3" fill="#475569" />
@@ -74,8 +67,7 @@
   <text class="sans list-text" x="480" y="312">Developing custom AI Agent Workflows</text>
   
   <circle cx="465" cy="334" r="3" fill="#475569" />
-  <text class="sans list-text" x="480" y="339">Producing Japanese-style music</text>
+  <text class="sans list-text" x="480" y="339">Producing Japanese-style electronic jazz</text>
 
-  <!-- Bottom status line -->
   <text class="mono" x="48" y="385" font-size="13" fill="#64748b"><tspan fill="#38bdf8">~</tspan> status: <tspan fill="#e2e8f0">building robust systems</tspan></text>
 </svg>
