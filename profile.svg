@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
   <defs>
-    <!-- Deep mist & fog blur filters without clipped borders -->
     <filter id="clouds-deep" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="140" />
     </filter>
@@ -12,16 +11,16 @@
       /* Distant storm sheet lightning (deep, moody pulses) */
       @keyframes storm-flash-1 {
         0%, 86%, 93%, 100% { opacity: 0; }
-        87.5% { opacity: 0.22; }
-        89%   { opacity: 0.08; }
-        90.5% { opacity: 0.28; }
+        87.5% { opacity: 0.18; }
+        89%   { opacity: 0.05; }
+        90.5% { opacity: 0.25; }
       }
 
       @keyframes storm-flash-2 {
         0%, 72%, 79%, 100% { opacity: 0; }
-        73.5% { opacity: 0.14; }
-        75%   { opacity: 0.05; }
-        76.5% { opacity: 0.20; }
+        73.5% { opacity: 0.12; }
+        75%   { opacity: 0.03; }
+        76.5% { opacity: 0.18; }
       }
 
       /* Slow drifting cloud mass */
@@ -57,71 +56,55 @@
     </style>
   </defs>
 
-  <!-- Deep near-black background -->
-  <rect width="900" height="360" rx="12" fill="#030508" />
+  <rect width="900" height="360" rx="12" fill="#010204" />
 
-  <!-- ATMOSPHERE LAYER (Seamless blurred night fog) -->
   <g class="drift-1" filter="url(#clouds-deep)">
-    <circle cx="200" cy="110" r="180" fill="#0b111a" />
-    <circle cx="560" cy="80"  r="210" fill="#0d1420" />
-    <circle cx="790" cy="200" r="170" fill="#080c13" />
-    <circle cx="340" cy="280" r="150" fill="#05080c" />
+    <circle cx="200" cy="110" r="180" fill="#030509" />
+    <circle cx="560" cy="80"  r="210" fill="#05080e" />
+    <circle cx="790" cy="200" r="170" fill="#020306" />
+    <circle cx="340" cy="280" r="150" fill="#010204" />
   </g>
 
   <g class="drift-2" filter="url(#clouds-diffuse)">
-    <circle cx="120" cy="190" r="110" fill="#0f1724" opacity="0.45" />
-    <circle cx="460" cy="130" r="120" fill="#111a28" opacity="0.40" />
-    <circle cx="690" cy="90"  r="100" fill="#0e1622" opacity="0.45" />
-    <circle cx="830" cy="280" r="110" fill="#080d14" opacity="0.55" />
+    <circle cx="120" cy="190" r="110" fill="#060912" opacity="0.4" />
+    <circle cx="460" cy="130" r="120" fill="#080c18" opacity="0.3" />
+    <circle cx="690" cy="90"  r="100" fill="#050810" opacity="0.4" />
+    <circle cx="830" cy="280" r="110" fill="#030508" opacity="0.5" />
   </g>
 
-  <!-- DISTANT SHEET LIGHTNING FLASHES (Deep navy & steel-blue pulses) -->
   <g class="storm-1" filter="url(#clouds-deep)">
-    <circle cx="330" cy="80" r="220" fill="#284063" />
-    <ellipse cx="420" cy="105" rx="160" ry="95" fill="#3b567d" />
+    <circle cx="330" cy="80" r="220" fill="#14243b" />
+    <ellipse cx="420" cy="105" rx="160" ry="95" fill="#1d304f" />
   </g>
   <g class="storm-2" filter="url(#clouds-deep)">
-    <circle cx="730" cy="110" r="190" fill="#1d2d47" />
-    <ellipse cx="690" cy="90"  rx="130" ry="75" fill="#2b4061" />
+    <circle cx="730" cy="110" r="190" fill="#0e182b" />
+    <ellipse cx="690" cy="90"  rx="130" ry="75" fill="#15243d" />
   </g>
 
-  <!-- Outer subtle dark border -->
-  <rect width="898" height="358" x="1" y="1" rx="11" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" />
+  <rect width="898" height="358" x="1" y="1" rx="11" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
 
-  <!-- ================= FOREGROUND TEXT CONTENT ================= -->
+  <text class="mono" x="48" y="48" font-size="12" font-weight="600" fill="#64748b" letter-spacing="2">PROFILE</text>
 
-  <!-- Top bar -->
-  <text class="mono" x="48" y="46" font-size="11" fill="#475569" letter-spacing="1.5">SYSTEM // PROFILE_MANIFEST</text>
-
-  <!-- Radar ping indicator -->
-  <g transform="translate(755, 42)">
+  <g transform="translate(755, 44)">
     <circle cx="0" cy="0" r="3.5" class="radar-ring" fill="none" stroke="#38bdf8" stroke-width="1.5" />
     <circle cx="0" cy="0" r="3" fill="#0284c7" />
-    <text class="mono" x="14" y="3.5" font-size="11" fill="#64748b">online</text>
+    <text class="mono" x="14" y="3.5" font-size="12" fill="#64748b">online</text>
   </g>
 
-  <!-- Headline -->
-  <text class="sans" x="48" y="106" font-size="25" font-weight="600" fill="#f8fafc" letter-spacing="-0.3">Software &amp; Web Systems Engineer</text>
-  <text class="mono" x="48" y="132" font-size="12.5" fill="#94a3b8">building modern web interfaces, declarative workflows &amp; automated pipelines</text>
+  <text class="sans" x="48" y="115" font-size="32" font-weight="600" fill="#ffffff" letter-spacing="-0.5">Software &amp; Web Systems Engineer</text>
+  
+  <text class="mono" x="48" y="145" font-size="14" fill="#94a3b8">Web Interfaces · Declarative Workflows · Automated Pipelines</text>
 
-  <!-- Separator rule -->
-  <line x1="48" y1="164" x2="852" y2="164" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+  <line x1="48" y1="180" x2="852" y2="180" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1" />
 
-  <!-- Column 1: Core Technologies -->
-  <text class="mono" x="48" y="202" font-size="10.5" font-weight="600" fill="#475569" letter-spacing="1.2">LANGUAGES &amp; RUNTIMES</text>
-  <text class="sans" x="48" y="226" font-size="13.5" font-weight="500" fill="#e2e8f0">TypeScript <tspan fill="#334155">·</tspan> JavaScript (ESNext) <tspan fill="#334155">·</tspan> Node.js</text>
-  <text class="mono" x="48" y="248" font-size="11" fill="#64748b">Async flows, reactive state, clean abstractions</text>
+  <text class="mono" x="48" y="230" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1.5">LANGUAGES</text>
+  <text class="sans" x="48" y="260" font-size="16" font-weight="500" fill="#ffffff">TypeScript <tspan fill="#475569">·</tspan> JavaScript <tspan fill="#475569">·</tspan> Node.js</text>
 
-  <!-- Column 2: DevOps & Automation -->
-  <text class="mono" x="380" y="202" font-size="10.5" font-weight="600" fill="#475569" letter-spacing="1.2">DEVOPS &amp; DELIVERY</text>
-  <text class="sans" x="380" y="226" font-size="13.5" font-weight="500" fill="#e2e8f0">CI/CD Pipelines <tspan fill="#334155">·</tspan> Docker <tspan fill="#334155">·</tspan> GitHub Actions</text>
-  <text class="mono" x="380" y="248" font-size="11" fill="#64748b">Automated testing, reproducible container builds</text>
+  <text class="mono" x="380" y="230" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1.5">DEVOPS</text>
+  <text class="sans" x="380" y="260" font-size="16" font-weight="500" fill="#ffffff">CI/CD <tspan fill="#475569">·</tspan> Docker <tspan fill="#475569">·</tspan> GitHub Actions</text>
 
-  <!-- Column 3: Academic Foundation -->
-  <text class="mono" x="650" y="202" font-size="10.5" font-weight="600" fill="#475569" letter-spacing="1.2">FOUNDATION</text>
-  <text class="sans" x="650" y="226" font-size="13.5" font-weight="500" fill="#e2e8f0">Degree in Info Systems</text>
-  <text class="mono" x="650" y="248" font-size="11" fill="#64748b">Software &amp; Systems Architecture</text>
+  <text class="mono" x="650" y="230" font-size="12" font-weight="600" fill="#64748b" letter-spacing="1.5">FOUNDATION</text>
+  <text class="sans" x="650" y="260" font-size="16" font-weight="500" fill="#ffffff">Info Systems Degree</text>
 
-  <!-- Bottom status line -->
-  <text class="mono" x="48" y="306" font-size="11.5" fill="#475569"><tspan fill="#38bdf8">~</tspan> status: <tspan fill="#cbd5e1">shipping zero-bloat repositories &amp; automated pipelines</tspan></text>
+  <text class="mono" x="48" y="320" font-size="13" fill="#64748b"><tspan fill="#38bdf8">~</tspan> status: <tspan fill="#e2e8f0">building robust systems</tspan></text>
 </svg>
