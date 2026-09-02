@@ -3,7 +3,6 @@
 </div>
 
 <p align="center">
-  <a href="mailto:your-email@example.com">Email</a> •
-  <a href="https://t.me/your-telegram">Telegram</a> •
-  <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+  <a href="https://yamaostudio.com/"><b>yamaostudio.com</b></a><br>
+  <sup>3D • Music • Programming • Contacts</sup>
 </p>
