@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./profile.svg" alt="YAMAO Profile Banner" width="100%" />
+  <img src="./profile.svg" alt="YAMAO Profile" width="100%" />
 
   <br><br>
 
-  <a href="https://yamaostudio.com/" style="text-decoration: none;">
-    <code>yamaostudio.com</code>
+  <a href="https://yamaostudio.com/">
+    <img src="./button.svg" alt="yamaostudio.com" />
   </a>
 </div>
