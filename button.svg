@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" width="220" height="44">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Monaco, Consolas, monospace; }
+  </style>
+  <rect width="218" height="42" x="1" y="1" rx="8" fill="#010204" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1" />
+  <rect width="218" height="42" x="1" y="1" rx="8" fill="#0284c7" fill-opacity="0.12" />
+  <text class="mono" x="110" y="26" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="middle" letter-spacing="0.5">yamaostudio.com ↗</text>
+</svg>
